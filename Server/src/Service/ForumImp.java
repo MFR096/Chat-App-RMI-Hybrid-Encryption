@@ -15,7 +15,6 @@ public class ForumImp extends UnicastRemoteObject implements Forum{
 
 	protected ForumImp() throws RemoteException {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
@@ -23,7 +22,7 @@ public class ForumImp extends UnicastRemoteObject implements Forum{
 		n++;
 		users.put(n, pr);
 		listPKs.put(n, pk);
-		pr.ecouter("Forum: Vous êtes connecté avec ID: @"+n+", bienvenue!\n");
+		pr.ecouter("Forum: Vous êtes connectés avec ID: @"+n+", bienvenue!\n");
 		pr.ecouter("Forum: Avant d'envoyer un message, vous devez effectuer une double-click sur la liste des intervenants pour la mise à jour.\n");
 		pr.ecouter("Forum: Vous pouvez envoyer un message à un seul utilisateur ou bien plusieurs(SHIFT/CTRL+Click).\n");
 		return n;
